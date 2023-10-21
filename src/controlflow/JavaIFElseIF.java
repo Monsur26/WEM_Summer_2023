@@ -31,10 +31,62 @@ public class JavaIFElseIF {
 
     }
 
+    public static void daysOfWeek(int dayNum){
+        if(dayNum==1){
+            System.out.println("Today is Monday");
+        } else if (dayNum==2){
+            System.out.println("Today is Tuesday");
+        }else if (dayNum==3){
+            System.out.println("Today is Wednesday");
+        }else if (dayNum==4){
+            System.out.println("Today is Thursday");
+        }else if (dayNum==5){
+            System.out.println("Today is Friday");
+        }else if (dayNum==6){
+            System.out.println("Today is Saturday");
+        }else if (dayNum==7){
+            System.out.println("Today is Sunday");
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+
+    public static void monthName(int monthNUm){
+        if (monthNUm==1){
+            System.out.println("January");
+        } else if (monthNUm==2){
+            System.out.println("This is February");
+        }else if (monthNUm==3){
+            System.out.println("This is Marhc");
+        }else if (monthNUm==4){
+            System.out.println("This is April");
+        }else if (monthNUm==5){
+            System.out.println("This is May");
+        }else if (monthNUm==6){
+            System.out.println("This is June");
+        }else if (monthNUm==7){
+            System.out.println("This is July");
+        }else if (monthNUm==8){
+            System.out.println("This is August");
+        }else if (monthNUm==9){
+            System.out.println("This is September");
+        }else if (monthNUm==10){
+            System.out.println("This is October");
+        }else if (monthNUm==11){
+            System.out.println("This is November");
+        }else if (monthNUm==12){
+            System.out.println("This is December");
+        } else {
+            System.out.println("Invalid Input, Please give a number in between 1 and 12");
+        }
+    }
+
     public static void main(String[] args) {
         gradesEarned(100);
         JavaIFElseIF obj1=new JavaIFElseIF();
         obj1.whatsThAage(350);
+        daysOfWeek(6);
+        monthName(18);
 
     }
 }
