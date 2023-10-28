@@ -37,12 +37,22 @@ public class JavaForLoop {
       //  System.out.println("The value of sum is : "+ sum);
     }
 
+    public static void subtract15() {
+        int value = 90;
+        for (int i = 0; i < 15; i++) {
+            value = value - i; //value   i=14
+            System.out.println(value);
+        }
+    }
+
+
 
     public static void main(String[] args) {
        // countingToThree();
        // countingReverse();
        // addingNumbers();
        // addingNumbersDynamic(10000);
-        multiplySuccessiveNumbers();
+       // multiplySuccessiveNumbers();
+        subtract15();
     }
 }

@@ -45,7 +45,24 @@ public class JavaSwitch {
         }
     }
 
+    public static void classOrNoClass(String dayName){
+
+        switch (dayName){
+            case "Saturday":
+                System.out.println("Today is a class day");
+                break;
+            case "Sunday":
+                System.out.println("Today is a class day");
+                break;
+            default:
+                System.out.println("Today is not a class day");
+        }
+
+    }
+
     public static void main(String[] args) {
+
         nameOfMonth(0);
+        classOrNoClass("sunday");
     }
 }

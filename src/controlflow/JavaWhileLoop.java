@@ -29,10 +29,20 @@ public class JavaWhileLoop {
         }
         System.out.println("The factorial of the number 10 is " + multipliedNum);
     }
+    public static void fractionalSuccessiveNumbers(int n){
+        double sum=0;
+        int i=1;
+        while(i<=n){
+            sum=sum+ 1.0/i;
+            System.out.println("The Value of i = "+ i+ " and the value of sum ="+ sum);
+            i++;
+        }
+    }
 
     public static void main(String[] args) {
         //countingNumber();
-        addNumbers();
-        MultiplySuccessiveNumber();
+      //  addNumbers();
+       // MultiplySuccessiveNumber();
+        fractionalSuccessiveNumbers(10);
     }
 }
