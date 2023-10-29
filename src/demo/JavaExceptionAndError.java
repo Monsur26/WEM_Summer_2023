@@ -3,7 +3,17 @@ package demo;
 import java.util.Scanner;
 
 public class JavaExceptionAndError  {
-    public static void main(String[] args) {
+    public static void lengthOfString(String str){
+        if (str == null){
+            throw new NullPointerException("The String is Null");
+        }
+        int length=str.length();
+
+        System.out.println("Length of desired String is : "+ length);
+    }
+
+
+    public static void main(String[] args) throws NullPointerException {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Input one whole Number");
         int a = scanner.nextInt();
@@ -35,6 +45,8 @@ public class JavaExceptionAndError  {
         } catch (NullPointerException exception){
             System.out.println("Null pointer exception"+ exception.getMessage());
         }
+
+        lengthOfString(null);
 
     }
 }
