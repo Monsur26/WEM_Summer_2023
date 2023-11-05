@@ -24,4 +24,6 @@ public class Parent extends GrandParent{
     public static void age(){
         System.out.println("Parent age is : 45 years old");
     }
+
+
 }

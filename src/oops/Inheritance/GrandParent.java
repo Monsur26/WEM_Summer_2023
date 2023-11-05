@@ -25,10 +25,18 @@ public class GrandParent {
         return height;
     }
 
-    public int wealth(){
+    public  int wealth(){
         int wealth= a*b;
         System.out.println("Grandfathers wealth :"+ wealth);
         return wealth;
+    }
+
+    public final void myName(){
+        System.out.println("This is a private method");
+    }
+
+    private void myAge(){
+
     }
 
     public static void age(){

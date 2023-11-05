@@ -16,6 +16,8 @@ public class ImplementInheritance {
         System.out.println(parent.wealth());
         System.out.println(daughter.wealth());
 
+        grandParent.myName();
+
 
         // solo properties
         GrandParent.age();
